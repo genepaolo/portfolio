@@ -1,24 +1,24 @@
 import React from 'react';
 
-import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+import { Section, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
-import { LeftSection } from './HeroStyles';
-
+import { MiddleSection } from './HeroStyles';
+import BackgroundAnimation from  '../BackgrooundAnimation/BackgroundAnimation';
 const Hero = (props) => (
   <>
-    <Section row nopadding>
-      <LeftSection>
+    <Section row nopadding fullheight>
+      <MiddleSection>
         <SectionTitle main center>
-          Welcome To <br />
-          My Personal Portfolio
+          I'm Gene Flores, <br />
+          web developer.
         </SectionTitle>
-        <SectionText>
-        The purpose of JavaScript Mastery is to help aspiring and established developers to take their development skills to the next level and build awesome apps.
-        </SectionText>
-        <Button onClick={props.handleClick}>Learn More</Button>
-      </LeftSection>
+        <Button>Learn More</Button>
+        <BackgroundAnimation />
+      </MiddleSection>
+      
     </Section>
   </>
 );
+
 
 export default Hero;

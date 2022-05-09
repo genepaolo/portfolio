@@ -1,17 +1,48 @@
 import React from 'react';
-import { DiFirebase, DiReact, DiZend } from 'react-icons/di';
+import { DiFirebase, DiReact, DiCssTricks, DiCode} from 'react-icons/di';
 import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
+import {pl, fe, be, other} from "./techskills.js"
 
-const Technologies = () =>  (
-  <Section id="tech">
-    <SectionDivider divider />
+import Aos from "aos";
+import "aos/dist/aos.css"
+import {useEffect} from "react";
+
+const Technologies = (props) =>  {
+
+  useEffect(()=>{
+    
+  }, []);
+
+  return(
+  <Section dataaos={props.dataaos} id="tech">
+    <SectionDivider divider colorAlt />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
-      I've worked with a range a technologies in the web development world.
-      From Back-end To Design
+      I have experience from simple front-end projects to MERN stack applications.
     </SectionText>
     <List>
+      <ListItem>
+        <picture>
+          <DiCode size="3rem" />
+        </picture>
+        <ListContainer>
+          <ListTitle>Programming Languages</ListTitle>
+          <ListParagraph>
+            {
+              pl.map((p, i) => {
+                return (
+                  <div key={i}>
+                    {p}
+                    <br/>
+                  </div>
+                )
+              })
+            }
+          </ListParagraph>
+        </ListContainer>
+      </ListItem>
+      
       <ListItem>
         <picture>
           <DiReact size="3rem" />
@@ -19,8 +50,16 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>Front-End</ListTitle>
           <ListParagraph>
-            Experiece with <br />
-            React.js
+          {
+              fe.map((p,i) => {
+                return (
+                  <div key={i}>
+                    {p}
+                    <br/>
+                  </div>
+                )
+              })
+            }
           </ListParagraph>
         </ListContainer>
       </ListItem>
@@ -31,26 +70,43 @@ const Technologies = () =>  (
         <ListContainer>
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
-            Experience with <br />
-            Node and Databases
+          {
+              be.map((p,i) => {
+                return (
+                  <div key={i}>
+                    {p}
+                    <br/>
+                  </div>
+                )
+              })
+            }
           </ListParagraph>
         </ListContainer>
       </ListItem>
       <ListItem>
         <picture>
-          <DiZend size="3rem" />
+          <DiCssTricks size="3rem" />
         </picture>
         <ListContainer>
-          <ListTitle>UI/UX</ListTitle>
+          <ListTitle>Other</ListTitle>
           <ListParagraph>
-            Experience with <br />
-            tools like Figma
+          {
+              other.map((p,i) => {
+                return (
+                  <div key={i}>
+                    {p}
+                    <br/>
+                  </div>
+                )
+              })
+            }
+            
           </ListParagraph>
         </ListContainer>
       </ListItem>
     </List>
-    <SectionDivider colorAlt />
+    
   </Section>
-);
+  )};
 
 export default Technologies;

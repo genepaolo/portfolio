@@ -1,23 +1,24 @@
-import Acomplishments from '../components/Acomplishments/Acomplishments';
-import BgAnimation from '../components/BackgrooundAnimation/BackgroundAnimation';
 import Hero from '../components/Hero/Hero';
 import Projects from '../components/Projects/Projects';
 import Technologies from '../components/Technologies/Technologies';
-import Timeline from '../components/TimeLine/TimeLine';
+import About from '../components/About/About';
 import { Layout } from '../layout/Layout';
-import { Section } from '../styles/GlobalComponents';
+
+import Aos from "aos";
+import "aos/dist/aos.css"
+import {useEffect} from "react";
 
 const Home = () => {
+  useEffect(()=>{
+    Aos.init({duration: 2000});
+  }, []);
+
   return (
     <Layout>
-      <Section grid>
-        <Hero />
-        <BgAnimation />
-      </Section>
-      <Projects />
-      <Technologies />
-      <Timeline />
-      <Acomplishments />
+      <Hero />
+      <About dataaos="fade-left"/>
+      <Technologies dataaos="fade-left"/>
+      <Projects dataaos="fade-left" />
     </Layout>
   );
 };

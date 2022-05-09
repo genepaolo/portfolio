@@ -1,21 +1,14 @@
-import { IoIosArrowDropdown } from 'react-icons/io';
+import { IoIosArrowDropdown} from 'react-icons/io';
+import {IoCloudyNightOutline} from 'react-icons/io5';
 import styled from 'styled-components';
 
-export const Container = styled.div`
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: 1fr;
-  grid-column-gap: 2rem;
+export const DivContainer = styled.div`
+  width: 100%;
+  background-color: ${(props) => props.theme.colors.background1};
   padding: 1rem;
-  padding-top: 2rem;
-
-  @media ${(props) => props.theme.breakpoints.sm} {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, 60px);
-    grid-column-gap: 0.5rem;
-    grid-row-gap: 0.5rem;
-  }
+  position: fixed;
+  z-index: 1000;
+  top: 0;
 `;
 export const Div1 = styled.div`
   grid-area: 1 / 1 / 2 / 2;
@@ -23,7 +16,6 @@ export const Div1 = styled.div`
   flex-direction: row;
   align-content: center;
   @media ${(props) => props.theme.breakpoints.sm} {
-    grid-area: 1 / 1 / 2 / 3;
   }
 `;
 export const Div2 = styled.div`
@@ -31,17 +23,28 @@ export const Div2 = styled.div`
   display: flex;
   justify-content: space-around;
   @media ${(props) => props.theme.breakpoints.sm} {
-    grid-area: 2 / 2 / 3 / 5;
   }
 `;
 export const Div3 = styled.div`
   grid-area: 1 / 5 / 2 / 6;
-  display: flex;
+  display: ${(props) => ( props.button ? 'none' : 'flex')};
   justify-content: space-around;
   align-items: center;
   @media ${(props) => props.theme.breakpoints.sm} {
+    display: ${(props) => ( props.button ? 'flex' : 'none')};
     align-items: center;
     grid-area: 1 / 4 / 2 / 6;
+  }
+`;
+export const Li = styled.div`
+  line-height: 5rem;
+  padding: 0 3rem;
+  @media ${(props) => props.theme.breakpoints.md} {
+    padding: 0 1rem;
+  }
+  @media ${(props) => props.theme.breakpoints.sm} {
+    line-height: normal;
+    padding: 2rem 0;
   }
 `;
 
@@ -51,13 +54,11 @@ export const NavLink = styled.a`
   line-height: 32px;
   color: rgba(255, 255, 255, 0.75);
   transition: 0.4s ease;
+  padding: 0.5rem;
   &:hover {
     color: #fff;
     opacity: 1;
     cursor: pointer;
-  }
-  @media ${(props) => props.theme.breakpoints.sm} {
-    padding: 0.5rem;
   }
 `;
 
@@ -113,12 +114,15 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
 export const SocialIcons = styled.a`
 transition: 0.3s ease;
 color: white;
-border-radius: 50px;
-  padding: 8px;
+border-radius: 5rem;
+padding: 1rem 1.5rem;
 &:hover {
     background-color: #212d45;
     transform: scale(1.2);
     cursor: pointer;
-    
   }
-`
+`;
+export const Cloud = styled(IoCloudyNightOutline)`
+  font-size: 5rem;
+  padding: 1rem;
+`;
