@@ -1,8 +1,8 @@
 import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
-
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { SocialIcons } from '../Header/HeaderStyles';
-import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
+import { FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
+
 
 const Footer = () => {
   return (
@@ -17,10 +17,10 @@ const Footer = () => {
       </LinkList>
       <SocialIconsContainer>
         <SocialContainer>
-          <SocialIcons href="https://google.com">
+          <SocialIcons href="https://github.com/genepaolo">
             <AiFillGithub size="3rem" />
           </SocialIcons>
-          <SocialIcons href="https://google.com">
+          <SocialIcons href="https://www.linkedin.com/in/gene-paolo-flores-5b3927151/">
             <AiFillLinkedin size="3rem" />
           </SocialIcons>
         </SocialContainer>

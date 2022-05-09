@@ -6,6 +6,7 @@ export const Div = styled.div`
   top: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
+  height: 100%;
 
   @media ${(props) => props.theme.breakpoints.sm} {
   }

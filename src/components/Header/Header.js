@@ -10,7 +10,7 @@ const Header = () =>  (
       <Container fluid>
         <Navbar.Brand href="/">
           <a style={{ display: 'flex', alignItems: 'center', color:"white" }}>
-              <Cloud /> <span>Portfolio</span>
+              <Cloud />
           </a>
         </Navbar.Brand>
         
@@ -44,10 +44,10 @@ const Header = () =>  (
               </Link>
             </Li> 
             <Div2>
-              <SocialIcons href="https://google.com">
+              <SocialIcons href="https://github.com/genepaolo">
                 <AiFillGithub size="3rem" />
               </SocialIcons>
-              <SocialIcons href="https://google.com">
+              <SocialIcons href="https://www.linkedin.com/in/gene-paolo-flores-5b3927151/">
                 <AiFillLinkedin size="3rem" />
               </SocialIcons>
             </Div2>

@@ -9,6 +9,7 @@ export const DivContainer = styled.div`
   position: fixed;
   z-index: 1000;
   top: 0;
+  left: 0;
 `;
 export const Div1 = styled.div`
   grid-area: 1 / 1 / 2 / 2;
@@ -111,7 +112,9 @@ export const NavProductsIcon = styled(IoIosArrowDropdown)`
 
 // Social Icons 
 
-export const SocialIcons = styled.a`
+export const SocialIcons = styled.a.attrs(props => ({
+  "target": "_blank"
+}))`
 transition: 0.3s ease;
 color: white;
 border-radius: 5rem;
@@ -123,6 +126,10 @@ padding: 1rem 1.5rem;
   }
 `;
 export const Cloud = styled(IoCloudyNightOutline)`
-  font-size: 5rem;
-  padding: 1rem;
+  font-size: 7rem;
+  padding: 0 0.5rem ;
+  @media ${(props) => props.theme.breakpoints.sm} {
+    font-size: 5rem;
+    padding:;
+  }
 `;

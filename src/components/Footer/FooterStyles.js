@@ -1,12 +1,12 @@
 import styled from "styled-components"
 
 export const FooterWrapper = styled.section`
-	width: calc(100vw - 96px);
-  max-width: 1040px;
+  width: 100%;
   padding: 2rem 48px 40px;
-  margin: 1rem auto;
+  margin: 0 auto;
   box-sizing: content-box;
-
+  display: block;
+//   background: linear-gradient(to bottom, ${props => props.theme.colors.background3} , ${props => props.theme.colors.background4});
 
   @media ${props => props.theme.breakpoints.sm} {
     padding: 0 16px 48px;

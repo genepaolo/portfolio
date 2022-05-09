@@ -5,6 +5,8 @@ export const Img = styled.img`
   height:100%;
   object-fit: cover;
   overflow: hidden;
+  border-radius: 1rem 1rem 0 0;
+
 `
 
 export const GridContainer = styled.section`
@@ -23,10 +25,11 @@ row-gap: 3rem;
 
 `
 export const BlogCard = styled.div`
-  border-radius: 10px;
+  border-radius: 1rem;
   box-shadow: 3px 3px 20px rgba(80, 78, 78, 0.5);
   text-align: center;
   width: 400px;
+  background: ${(props) => props.theme.colors.background1};
   @media ${(props) => props.theme.breakpoints.sm} {
     width: 100%;
   }
@@ -68,15 +71,11 @@ export const Intro = styled.div`
 
 export const CardInfo = styled.p`
   width: 100%;
-  padding: 0 50px;
+  padding: 0 5rem;
   color: #e4e6e7;
   font-style: 2rem;
   line-height: 24px;
   text-align: justify;
-  @media ${(props) => props.theme.breakpoints.sm} {
-    padding:.3rem
-  
-}
 `;
 
 
@@ -88,7 +87,9 @@ export const UtilityList = styled.ul`
   margin: 2.5rem 0;
 `;
 
-export const ExternalLinks = styled.a`
+export const ExternalLinks = styled.a.attrs(props => ({
+  "target": "_blank"
+}))`
 color:#d4c0c0;
 font-size: 1.6rem;
 padding:1rem 1.5rem;
@@ -97,7 +98,6 @@ border-radius: 15px;
 transition: 0.5s;
 &:hover{
   background: #801414;
-
 }
 `;
 

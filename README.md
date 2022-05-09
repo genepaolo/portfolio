@@ -1,6 +1,6 @@
 ## Personal Portfolio of Gene Flores
 
-![Portfolio Website](https://i.ibb.co/WgPMpts/image.png)
+![Website Screenshot](https://i.ibb.co/4JffHmW/portfolio-home.png)
 
 This is a simple one page React application with NextJS and Styled Components to showcase my portfolio.
 
