@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Section, SectionDivider, SectionText, SectionTitle, SectionSmallTitle } from '../../styles/GlobalComponents';
+import { SectionJump,Section, SectionDivider, SectionText, SectionTitle, SectionSmallTitle } from '../../styles/GlobalComponents';
 import {Img, ImgContainer} from "./AboutStyles";
 // import Aos from "aos";
 // import "aos/dist/aos.css"
@@ -14,13 +14,15 @@ const About = (props) => {
   
   
   return (
-    <Section dataaos={props.dataaos} id="about">
+    <div>
+            <SectionJump id="about">&nbsp;</SectionJump>
+            <Section dataaos={props.dataaos}>
       <SectionDivider divider />
       <SectionTitle>About</SectionTitle>
       <br/>
       <SectionSmallTitle>me</SectionSmallTitle>
       <ImgContainer>
-        <Img width="300px" height="300px" objectFit="cover" objectPosition="center" src={pp} />
+        <Img priority width="300px" height="300px" objectFit="cover" objectPosition="center" src={pp} />
       </ImgContainer>
       <SectionText>
         My name is Gene Paolo Oreta Flores. I am a recent graduate of USC Viterbi School of Engineering with a B.S. in Computer Science. I am currently looking for a developer role to kickstart my career!
@@ -30,6 +32,9 @@ const About = (props) => {
           This is a simple one page React application with NextJS and Styled Components to showcase my portfolio.
       </SectionText>
     </Section>
+
+    </div>
+    
   );
 };
 

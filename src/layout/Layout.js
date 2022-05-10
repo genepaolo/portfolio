@@ -6,7 +6,6 @@ import { Container } from './LayoutStyles'
 import Script from 'next/script';
 import 'bootstrap/dist/css/bootstrap.css'
 
-import land from "../images/land.svg";
 import rocket from "../images/rocket.svg";
 import Image from "next/image";
 
@@ -14,7 +13,7 @@ export const Layout = ({children}) => {
   return (
     <Container>
       <Header/>
-      <main>{children}</main> 
+      <main style={{overflow: "hidden"}}>{children}</main> 
       <Footer/>
       <div className="rocketman">
         <Image width={"300px"} height={"300px"}src={rocket}/>

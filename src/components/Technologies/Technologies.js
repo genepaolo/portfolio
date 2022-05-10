@@ -1,17 +1,16 @@
 import React from 'react';
 import { DiFirebase, DiReact, DiCssTricks, DiCode} from 'react-icons/di';
-import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
+import { SectionJump, Section, SectionDivider, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 import {pl, fe, be, other} from "./techskills.js"
 
-// import Aos from "aos";
-// import "aos/dist/aos.css"
-// import {useEffect} from "react";
 
 const Technologies = (props) =>  {
 
   return(
-  <Section dataaos={props.dataaos} id="tech">
+    <div>
+      <SectionJump id="tech" ></SectionJump>
+      <Section dataaos={props.dataaos}>
     <SectionDivider divider colorAlt />
     <SectionTitle>Technologies</SectionTitle>
     <SectionText>
@@ -103,6 +102,8 @@ const Technologies = (props) =>  {
     </List>
     
   </Section>
+    </div>
+  
   )};
 
 export default Technologies;

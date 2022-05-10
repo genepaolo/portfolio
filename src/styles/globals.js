@@ -29,6 +29,8 @@ const GlobalStyles = createGlobalStyle`
   a {
     text-decoration: none;
   }
+
+
   li{
     list-style: none;
   }
@@ -136,6 +138,9 @@ const GlobalStyles = createGlobalStyle`
       top: 65%;
       left: calc(100% + 100px);
     }
+  }
+  .btn-close{
+    background: transparent url("https://img.icons8.com/fluency-systems-filled/48/ffffff/close-window.png")  center/2em auto no-repeat;
   }
 
 `;

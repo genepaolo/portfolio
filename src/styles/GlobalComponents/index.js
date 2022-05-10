@@ -1,5 +1,11 @@
 import styled from 'styled-components'
 
+export const SectionJump = styled.span`
+  display: block;
+  padding-top: 10rem;
+  margin-top: -10rem;
+`
+
 export const Section = styled.section.attrs(props => ({
   "data-aos": props.dataaos
 }))`

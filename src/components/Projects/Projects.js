@@ -1,14 +1,16 @@
 import React from 'react';
 
 import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
-import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
+import { SectionJump, Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
 
 
 const Projects = (props) => {
   return(
-  <Section dataaos={props.dataaos} id="projects">
-    <SectionDivider />
+    <div>
+          <SectionJump id="projects">&nbsp;</SectionJump>
+          <Section dataaos={props.dataaos} >
+    <SectionDivider divider/>
     <SectionTitle main>Projects</SectionTitle>
     <GridContainer>
       {projects.map((p, i) => {
@@ -16,7 +18,7 @@ const Projects = (props) => {
           <BlogCard key={i}>
           <Img src={p.image} />
             <TitleContent>
-              <HeaderThree title>{p.title}</HeaderThree>
+              <HeaderThree>{p.title}</HeaderThree>
               <Hr />
             </TitleContent>
             <CardInfo className="card-info">{p.description}</CardInfo>
@@ -37,6 +39,9 @@ const Projects = (props) => {
       })}
     </GridContainer>
   </Section>
+
+    </div>
+  
   )};
 
 export default Projects;

@@ -8,10 +8,10 @@ const Header = () =>  (
   {['sm'].map((expand) => (
     <Navbar key={expand} expand={expand} className="mb-3">
       <Container fluid>
-        <Navbar.Brand href="/">
-          <a style={{ display: 'flex', alignItems: 'center', color:"white" }}>
+        <Navbar.Brand href="/#">
+          <span style={{ display: 'flex', alignItems: 'center', color:"white" }}>
               <Cloud />
-          </a>
+          </span>
         </Navbar.Brand>
         
         <Navbar.Toggle style={{border: "none"}} aria-controls={`offcanvasNavbar-expand-${expand}`}>
@@ -21,9 +21,9 @@ const Header = () =>  (
           id={`offcanvasNavbar-expand-${expand}`}
           aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
           placement="end"
-          style={{backgroundColor: "inherit",
-        }}
-        >
+          id="offcanvas"
+          style={{ backgroundColor: '#0F1624' }}
+          >
           <Offcanvas.Header closeButton>
           </Offcanvas.Header>
           <Offcanvas.Body>

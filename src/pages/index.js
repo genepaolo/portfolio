@@ -16,9 +16,9 @@ const Home = () => {
   return (
     <Layout>
       <Hero />
-      <About dataaos="fade-left"/>
-      <Technologies dataaos="fade-left"/>
-      <Projects dataaos="fade-left" />
+      <About dataaos="zoom-in"/>
+      <Technologies dataaos="zoom-in"/>
+      <Projects dataaos="zoom-in" />
     </Layout>
   );
 };
