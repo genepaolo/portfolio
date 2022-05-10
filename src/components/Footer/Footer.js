@@ -1,7 +1,6 @@
 import React from 'react';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
-import { SocialIcons } from '../Header/HeaderStyles';
-import { FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
+import { FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer, SocialIcons } from './FooterStyles';
 
 
 const Footer = () => {

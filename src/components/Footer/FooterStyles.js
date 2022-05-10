@@ -17,14 +17,14 @@ export const FooterWrapper = styled.section`
 export const LinkItem = styled.a`
 	font-size: 18px;
 	line-height: 30px;
-	color: rgba(255, 255, 255, 0.75);
+	color: black;
 	margin-bottom: 16px;
 	transition: .3s ease;
 	position: relative;
 	left: 0;
 
 	&:hover {
-		color: #fff;
+		color: #e2d1c3;
 		left: 6px;
 	}
 
@@ -103,7 +103,8 @@ export const Slogan = styled.p`
 
 export const SocialContainer = styled.div`
 	display: flex;
-  align-items: center;
+  	align-items: center;
+  	color: black;
 
 	@media ${props => props.theme.breakpoints.md}{
 		justify-content: center;
@@ -111,6 +112,19 @@ export const SocialContainer = styled.div`
 		flex-wrap: wrap;
 	}
 `
+export const SocialIcons = styled.a.attrs(props => ({
+	"target": "_blank"
+  }))`
+  transition: 0.3s ease;
+  color: black;
+  border-radius: 5rem;
+  padding: 1rem 1.5rem;
+  &:hover {
+	  background-color: #212d45;
+	  transform: scale(1.2);
+	  cursor: pointer;
+	}
+  `;
 
 
 export const LinkList = styled.ul`
@@ -148,7 +162,7 @@ export const LinkTitle = styled.h4`
 	font-size: 12px;
 	line-height: 24px;
 	text-transform: uppercase;
-	color: rgba(255, 255, 255, 0.4);
+	color: black;
 	margin-bottom: 16px;
 
 	@media ${props => props.theme.breakpoints.sm} {

@@ -53,7 +53,7 @@ export const Li = styled.div`
 export const NavLink = styled.a`
   font-size: 2rem;
   line-height: 32px;
-  color: rgba(255, 255, 255, 0.75);
+  color: #fdfcfb;
   transition: 0.4s ease;
   padding: 0.5rem;
   &:hover {
@@ -116,7 +116,7 @@ export const SocialIcons = styled.a.attrs(props => ({
   "target": "_blank"
 }))`
 transition: 0.3s ease;
-color: white;
+color: #fdfcfb;
 border-radius: 5rem;
 padding: 1rem 1.5rem;
 &:hover {
@@ -128,6 +128,7 @@ padding: 1rem 1.5rem;
 export const Cloud = styled(IoCloudyNightOutline)`
   font-size: 7rem;
   padding: 0 0.5rem ;
+  color: #fdfcfb;
   @media ${(props) => props.theme.breakpoints.sm} {
     font-size: 5rem;
     padding:;
