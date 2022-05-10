@@ -4,15 +4,11 @@ import { Section, SectionDivider, SectionText, SectionTitle } from '../../styles
 import { List, ListContainer, ListItem, ListParagraph, ListTitle } from './TechnologiesStyles';
 import {pl, fe, be, other} from "./techskills.js"
 
-import Aos from "aos";
-import "aos/dist/aos.css"
-import {useEffect} from "react";
+// import Aos from "aos";
+// import "aos/dist/aos.css"
+// import {useEffect} from "react";
 
 const Technologies = (props) =>  {
-
-  useEffect(()=>{
-    
-  }, []);
 
   return(
   <Section dataaos={props.dataaos} id="tech">

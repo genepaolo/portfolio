@@ -3,14 +3,9 @@ import React from 'react';
 import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
-import Aos from "aos";
-import "aos/dist/aos.css"
-import {useEffect} from "react";
+
 
 const Projects = (props) => {
-  useEffect(()=>{
-    
-  }, []);
   return(
   <Section dataaos={props.dataaos} id="projects">
     <SectionDivider />

@@ -2,9 +2,9 @@ import React from 'react';
 
 import { Section, SectionDivider, SectionText, SectionTitle, SectionSmallTitle } from '../../styles/GlobalComponents';
 import {Img, ImgContainer} from "./AboutStyles";
-import Aos from "aos";
-import "aos/dist/aos.css"
-import {useEffect} from "react";
+// import Aos from "aos";
+// import "aos/dist/aos.css"
+// import {useEffect} from "react";
 
 
 import pp from "../../../public/images/profile.jpeg";
@@ -12,10 +12,7 @@ import pp from "../../../public/images/profile.jpeg";
 
 const About = (props) => {
   
-  useEffect(()=>{
-    
-  }, []);
-
+  
   return (
     <Section dataaos={props.dataaos} id="about">
       <SectionDivider divider />
