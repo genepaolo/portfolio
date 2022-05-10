@@ -2,9 +2,6 @@ import React from 'react';
 
 import { SectionJump,Section, SectionDivider, SectionText, SectionTitle, SectionSmallTitle } from '../../styles/GlobalComponents';
 import {Img, ImgContainer} from "./AboutStyles";
-// import Aos from "aos";
-// import "aos/dist/aos.css"
-// import {useEffect} from "react";
 
 
 import pp from "../../../public/images/profile.jpeg";

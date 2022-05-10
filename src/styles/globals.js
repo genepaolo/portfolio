@@ -79,12 +79,12 @@ const GlobalStyles = createGlobalStyle`
 
   }
   .stars:nth-of-type(4) { 
-    top: 50%; animation-duration: 1s; 
+    top: 50%; animation-duration: 4s; 
     animation-name: particleAnimation4;
 
   }
   .stars:nth-of-type(5) { 
-    top: 90%; animation-duration: 8s; 
+    top: 90%; animation-duration: 1.5s; 
     animation-name: particleAnimation5;
 
   }
@@ -142,7 +142,13 @@ const GlobalStyles = createGlobalStyle`
   .btn-close{
     background: transparent url("https://img.icons8.com/fluency-systems-filled/48/ffffff/close-window.png")  center/2em auto no-repeat;
   }
-
+  
+  #offcanvasNavbar-expand-sm{
+    backgroundColor: ${props => props.theme.colors.background1}!important;
+    @media ${(props) => props.theme.breakpoints.sm} {
+      height: 33rem;
+    }
+  }
 `;
 
 export default GlobalStyles;

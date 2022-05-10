@@ -66,11 +66,11 @@ export const SectionTitle = styled.h2`
 `
 
 export const SectionText = styled.p`
-  max-width: 800px;
+  max-width: 100%;
   font-size: 24px;
   line-height: 40px;
   font-weight: 300;
-  padding-bottom: 3.6rem;
+  padding: 3rem 0;
   color: rgba(255, 255, 255, 0.5);
 
   @media ${(props) => props.theme.breakpoints.md} {
@@ -87,10 +87,9 @@ export const SectionText = styled.p`
   }
 `
 
-export const SectionSmallTitle = styled.h3`
+export const SectionSmallTitle = styled.p`
   font-weight: 800;
   font-size: 4rem;
-  width: max-content;
   max-width: 100%;
   background: linear-gradient(121.57deg, #FFFFFF 18.77%, rgba(255, 255, 255, 0.66) 60.15%);
   -webkit-background-clip: text;
@@ -100,6 +99,7 @@ export const SectionSmallTitle = styled.h3`
 
   @media ${props => props.theme.breakpoints.md}{
     margin-bottom: 12px;
+    max-width: 670px;
   }
 
   @media ${props => props.theme.breakpoints.sm}{
@@ -120,15 +120,15 @@ export const SectionDivider = styled.div`
     'linear-gradient(270deg, #F46737 0%, #945DD6 100%)' :
     'linear-gradient(270deg, #13ADC7 0%, #945DD6 100%)'};
 
-    margin: ${(props) => props.divider ? "4rem 0" : "" };
+  margin: ${(props) => props.divider ? "2rem 0" : "" };
 
   @media ${(props) => props.theme.breakpoints.md} {
-    width: 48px;
+    width: 96px;
     height: 4px;
   }
 
   @media ${(props) => props.theme.breakpoints.sm} {
-    width: 32px;
+    width: 64px;
     height: 2px;
   }
 `

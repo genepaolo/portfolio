@@ -1,9 +1,10 @@
 import Link from 'next/link';
-import React from 'react';
+import React,{useState} from 'react';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { DivContainer, Li, Div2, NavLink, SocialIcons, Cloud } from './HeaderStyles';
 import {Navbar, Offcanvas, Nav, Container} from 'react-bootstrap';
-const Header = () =>  (
+function Header(){
+  return(
   <DivContainer>
   {['sm'].map((expand) => (
     <Navbar key={expand} expand={expand} className="mb-3">
@@ -20,27 +21,26 @@ const Header = () =>  (
         <Navbar.Offcanvas
           id={`offcanvasNavbar-expand-${expand}`}
           aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
-          placement="end"
-          id="offcanvas"
-          style={{ backgroundColor: '#0F1624' }}
+          placement="top"
+          style={{ backgroundColor: '#0F1624'}}
           >
           <Offcanvas.Header closeButton>
           </Offcanvas.Header>
           <Offcanvas.Body>
             <Nav className="justify-content-end flex-grow-1 pe-3">
-              <Li>
-                <Link href="#about">
-                  <NavLink>About</NavLink>
+              <Li >
+                <Link href="#about" >
+                  <NavLink href="#about" > About</NavLink>
                 </Link>
               </Li>
               <Li>
-              <Link href="#tech">
-                <NavLink>Technologies</NavLink>
+              <Link href="#tech" >
+                <NavLink href="#tech">Technologies</NavLink>
               </Link>
             </Li>  
             <Li>
               <Link href="#projects">
-                <NavLink>Projects</NavLink>
+                <NavLink href="#projects">Projects</NavLink>
               </Link>
             </Li> 
             <Div2>
@@ -59,6 +59,6 @@ const Header = () =>  (
   ))}
   </DivContainer>
     
-);
+)};
 
 export default Header;

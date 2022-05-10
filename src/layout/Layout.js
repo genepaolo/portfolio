@@ -2,6 +2,7 @@ import React from 'react'
 
 import Footer from '../components/Footer/Footer'
 import Header from '../components/Header/Header'
+import BackgroundAnimation from "../components/BackgrooundAnimation/BackgroundAnimation"
 import { Container } from './LayoutStyles'
 import Script from 'next/script';
 import 'bootstrap/dist/css/bootstrap.css'
@@ -12,6 +13,7 @@ import Image from "next/image";
 export const Layout = ({children}) => {
   return (
     <Container>
+      <BackgroundAnimation />
       <Header/>
       <main style={{overflow: "hidden"}}>{children}</main> 
       <Footer/>

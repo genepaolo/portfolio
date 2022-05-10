@@ -3,7 +3,6 @@ import React from 'react';
 import { Section, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
 import { MiddleSection } from './HeroStyles';
-import BackgroundAnimation from  '../BackgrooundAnimation/BackgroundAnimation';
 function Hero(){
   
   function handleClick(){
@@ -14,7 +13,6 @@ function Hero(){
   <>
     <Section row nopadding fullheight>
       <MiddleSection>
-        <BackgroundAnimation />
         <SectionTitle main center>
           I'm Gene Flores, <br />
           web developer.
