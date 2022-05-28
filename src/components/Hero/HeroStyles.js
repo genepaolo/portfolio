@@ -14,3 +14,7 @@ export const MiddleSection = styled.div`
     width: 100%;
   }
 `;
+
+export const PCenter = styled.p`
+  text-align: center;
+`;

@@ -16,15 +16,13 @@ const About = (props) => {
             <Section dataaos={props.dataaos}>
       <SectionDivider divider />
       <SectionTitle>About</SectionTitle>
-      <br/>
-      <SectionSmallTitle>me</SectionSmallTitle>
       <ImgContainer>
         <Img priority width="300px" height="300px" objectFit="cover" objectPosition="center" src={pp} />
       </ImgContainer>
+      <br/>
       <SectionText>
-        My name is Gene Paolo Oreta Flores. I am a recent graduate of USC Viterbi School of Engineering with a B.S. in Computer Science. I am currently looking for a developer role to kickstart my career!
+        My name is Gene Paolo Oreta Flores. I am a recent graduate of USC Viterbi School of Engineering with a B.S. in Computer Science and I am currently a web developer for Weaverry. I love working with responsive designs from small business sites to rich interactive web applications!
       </SectionText>
-      <SectionSmallTitle>the website</SectionSmallTitle>
       <SectionText>
           This is a simple one page React application with NextJS and Styled Components to showcase my portfolio.
       </SectionText>

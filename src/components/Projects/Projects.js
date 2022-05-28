@@ -16,7 +16,9 @@ const Projects = (props) => {
       {projects.map((p, i) => {
         return (
           <BlogCard key={i}>
-          <Img src={p.image} />
+            <a target="_blank"href={p.visit}>
+              <Img src={p.image} />
+            </a>
             <TitleContent>
               <HeaderThree>{p.title}</HeaderThree>
               <Hr />
