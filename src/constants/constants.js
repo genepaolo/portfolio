@@ -9,12 +9,12 @@ export const projects = [
     id: 0,
   },
   {
-    title: 'No JS Interactive Resume',
-    description:"This is a small project using only HTML, CSS, and SASS without Bootstrap or Javascript. I never truly appreciated Javascript until you need to find workaround when you cannot select the parent node.",
+    title: 'Sorting Visualizer',
+    description:"This is a visualizer that demonstrates/animates different sorting algorithms (Bubble Sort, Insertion Sort, Selection Sort, Quick Sort, & Merge Sort). This is created using React and Redux to better understand the JS library.",
     image: '/images/2.png',
-    tags: [ 'HTML', 'CSS/SASS'],
-    source: 'https://github.com/genepaolo/resume-gene',
-    visit: 'https://genepaolo.github.io/resume-gene/',
+    tags: [ 'HTML', 'CSS/SASS', 'JS/React', 'Redux'],
+    source: 'https://github.com/genepaolo/sorting-visualizer',
+    visit: 'https://genepaolo.github.io/sorting-visualizer/',
     id: 1,
   },
   {
@@ -43,5 +43,14 @@ export const projects = [
     source: null,
     visit: 'https://gene-todolist.herokuapp.com/',
     id: 4,
+  },
+  {
+    title: 'No JS Interactive Resume',
+    description:"This is a small project using only HTML, CSS, and SASS without Bootstrap or Javascript. I never truly appreciated Javascript until you need to find workaround when you cannot select the parent node.",
+    image: '/images/6.png',
+    tags: [ 'HTML', 'CSS/SASS'],
+    source: 'https://github.com/genepaolo/resume-gene',
+    visit: 'https://genepaolo.github.io/resume-gene/',
+    id: 5,
   }
 ];
