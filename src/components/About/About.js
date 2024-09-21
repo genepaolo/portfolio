@@ -21,7 +21,7 @@ const About = (props) => {
       </ImgContainer>
       <br/>
       <SectionText>
-        My name is Gene Paolo Oreta Flores. I am a recent graduate of USC Viterbi School of Engineering with a B.S. in Computer Science and I am currently a web developer for Weaverry. I love working with responsive designs from small business sites to rich interactive web applications!
+        My name is Gene Paolo Oreta Flores. I am a graduate of USC Viterbi School of Engineering with a B.S. in Computer Science and I used to work as a Software Engineer for Weaverry, a startup web consultant and software company. I am currently open to any work opportunities! I love working with responsive designs from small business sites to rich interactive web applications!
       </SectionText>
       <SectionText>
           This is a simple one page React application with NextJS and Styled Components to showcase my portfolio.

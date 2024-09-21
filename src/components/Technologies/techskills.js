@@ -1,5 +1,6 @@
 export const pl = [
     "JavaScript",
+    "TypeScript",
     "C++",
     "Java",
    
@@ -10,6 +11,8 @@ export const fe = [
     "HTML5",
     "CSS",
     "SASS",
+    "Next.js",
+    "TailwindCSS",
 ];
 
 export const be = [

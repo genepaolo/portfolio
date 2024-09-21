@@ -1,5 +1,23 @@
 export const projects = [
   {
+    title: 'Anges Vu Research Portfolio',
+    description: "Using NextJs and TailwindCSS, I helped develop a research portfolio for a friend working on her PhD in Linguistics.",
+      image: '/images/anges.png',
+      tags: [ 'HTML', 'TailwindCSS', 'NextJs'],
+    source: "https://github.com/genepaolo/angesvu",
+    visit: 'https://angesvu.vercel.app/',
+    id: 8,
+  },
+  {
+    title: 'CordialMD',
+    description: "Using React and Node.js, I created a simple healthcare provider website. This was a project for a client in Healthcare.",
+      image: '/images/cordial.png',
+      tags: [ 'HTML', 'CSS', 'JS/React'],
+    source: "https://github.com/genepaolo/angesvu",
+    visit: "https://cordialhp.com/",
+    id: 7,
+  },
+  {
     title: 'Gene Tech',
     description: "Using NextJs and TailwindCSS, I developed a blog website to discuss LeetCode Guides and World Development in the Tech Space.",
       image: '/images/gene-tech.png',
