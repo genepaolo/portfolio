@@ -1,12 +1,21 @@
 export const projects = [
   {
+    title: 'Ableton',
+    description: "Using NextJs and TailwindCSS, I helped develop ableton.com.",
+      image: '/images/ableton.png',
+      tags: [ 'HTML', 'TailwindCSS', 'NextJs'],
+    source: null,
+    visit: 'https://www.ableton.com/en/',
+    id: 10,
+  },
+  {
     title: 'Anges Vu Research Portfolio',
     description: "Using NextJs and TailwindCSS, I helped develop a research portfolio for a friend working on her PhD in Linguistics.",
       image: '/images/anges.png',
       tags: [ 'HTML', 'TailwindCSS', 'NextJs'],
     source: "https://github.com/genepaolo/angesvu",
     visit: 'https://angesvu.vercel.app/',
-    id: 8,
+    id: 9,
   },
   {
     title: 'CordialMD',
@@ -15,6 +24,15 @@ export const projects = [
       tags: [ 'HTML', 'CSS', 'JS/React'],
     source: "https://github.com/genepaolo/angesvu",
     visit: "https://cordialhp.com/",
+    id: 8,
+  },
+  {
+    title: 'Weaverry',
+    description: "Using React, I created a single page website for Weaverry.",
+      image: '/images/weaverry.png',
+      tags: [ 'HTML', 'CSS', 'JS/React'],
+    source: null,
+    visit: 'https://www.weaverry.com/',
     id: 7,
   },
   {
