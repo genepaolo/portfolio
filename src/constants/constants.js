@@ -1,5 +1,23 @@
 export const projects = [
   {
+    title: 'GTFO',
+    description: "Inspired by AF Talent Management, I developed a mock talent agency with both model showcasing and model shopping services website using Hostinger's Web Hosting service and builder.",
+      image: '/images/gtfo.png',
+      tags: [],
+    source: null,
+    visit: 'https://gtfo-m6lwqwpzxptbrvzm.builder-preview.com/',
+    id: 12,
+  },
+  {
+    title: 'Mookie',
+    description: "I developed a mock cookie delivery website using Hostinger's Web Hosting service and builder.",
+      image: '/images/mookie.png',
+      tags: [],
+    source: null,
+    visit: 'https://mookie-a0xwoopkr1cpe6r3.builder-preview.com/',
+    id: 11,
+  },
+  {
     title: 'Ableton',
     description: "Using NextJs and TailwindCSS, I helped develop ableton.com.",
       image: '/images/ableton.png',

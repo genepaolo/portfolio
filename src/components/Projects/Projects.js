@@ -25,7 +25,7 @@ const Projects = (props) => {
             </TitleContent>
             <CardInfo className="card-info">{p.description}</CardInfo>
             <div>
-              <TitleContent>Stack</TitleContent>
+              {p.tags.length > 0 ? <TitleContent>Stack</TitleContent> : <></>}
               <TagList>
                 {p.tags.map((t, i) => {
                   return <Tag key={i}>{t}</Tag>;
